@@ -1,8 +1,4 @@
 body {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  width: 100%;
   --color-bg-primary: #637a9e;
   background-color: var(--color-bg-primary);
   color: #f0e5d9;
@@ -54,28 +50,20 @@ a {
   margin: 100px;
   width: 300px;
   text-align: center;
-  box-shadow: -10px 10px 0 -3px #637a9e, -10px 10px 0 0 #9bf6ff,
+  box-shadow: -10px 10px 0 -3px #637a9e, -10px 10px #9bf6ff,
     -20px 20px 0 -3px #637a9e, -20px 20px 0 0 #9bf6ff;
 }
 
 a:hover {
   top: 40px;
   right: 40px;
-  box-shadow: 0 0 0 3px #9bf6ff, 0 0 0 0px #637a9e, 0 0 0 3px #9bf6ff,
-    0 0 0 0px #637a9e, 0 0 0 3px #9bf6ff;
-}
-
-main {
+  box-shadow: 0 0 0 -3px #637a9e, 0 0 0 0px #9bf6ff, 0 0 0 -3px #637a9e,
+    0 0 0 0px #9bf6ff;
 }
 
 .about-section {
   text-align: center;
-  /* width: 800px; */
-  padding: 100px;
-  border: 3px solid #9bf6ff;
-  margin: 60px;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: row;
   background-color: black;
@@ -85,11 +73,24 @@ main {
   display: flex;
   flex-direction: column;
   border: 3px solid white;
-  width: 50%;
   padding: 30px;
+  margin: 60px;
+  width: 500px;
 }
 
 .my-dog {
   border: 3px solid white;
   transform: rotate(7deg);
+}
+
+.work-section {
+  background-color: black;
+}
+
+.work-heading {
+  text-align: center;
+}
+
+.contact-section {
+  background-color: black;
 }
