@@ -1,16 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
-  --color-bg-primary: #576b8b;
+  --color-bg-primary: black;
   --color-text: #9bf6ff;
   background-color: var(--color-bg-primary);
   color: #f0e5d9;
+  font-family: "Source Code Pro", monospace;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
 }
 
 header {
   width: 100%;
-  padding: 40px;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  margin: 60px;
+  align-items: center;
 }
 
 .introduction {
@@ -18,9 +31,8 @@ header {
   background-color: var(--color-bg-primary);
   display: flex;
   flex-direction: column;
-  width: 500px;
-  padding: 20px;
-  border: 3px solid currentColor;
+  gap: 15px;
+  max-width: 500px;
   text-align: center;
 }
 
@@ -51,31 +63,35 @@ a {
   margin: 100px;
   width: 300px;
   text-align: center;
-  box-shadow: -10px 10px 0 -3px var(--color-bg-primary), -10px 10px #9bf6ff,
-    -20px 20px 0 -3px var(--color-bg-primary), -20px 20px 0 0 #9bf6ff;
+  box-shadow: -10px 10px 0 -3px var(--color-bg-primary), -10px 10px #fff59b,
+    -20px 20px 0 -3px var(--color-bg-primary), -20px 20px 0 0 #ff9bf7;
 }
 
 a:hover {
   top: 40px;
   right: 40px;
-  box-shadow: 0 0 0 -3px var(--color-bg-primary), 0 0 0 0px #9bf6ff,
-    0 0 0 -3px var(--color-bg-primary), 0 0 0 0px #9bf6ff;
+  box-shadow: 0 0 0 -3px var(--color-bg-primary), 0 0 0 0px #fff59b,
+    0 0 0 -3px var(--color-bg-primary), 0 0 0 0px #ff9bf7;
 }
 
 .about-section {
   text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
 }
 
 .about-text {
   display: flex;
   flex-direction: column;
-  border: 3px solid white;
+  gap: 15px;
+  border: 3px solid #9bf6ff;
   padding: 30px;
   margin: 60px;
   width: 500px;
+  box-shadow: -10px 10px 0 -3px var(--color-bg-primary), -10px 10px #fff59b,
+    -20px 20px 0 -3px var(--color-bg-primary), -20px 20px 0 0 #ff9bf7;
 }
 
 .about-images {
@@ -85,8 +101,8 @@ a:hover {
 
 .poloroid {
   background-color: white;
-  padding: 10px;
-  margin: 30px;
+  padding: 8px;
+  margin: 20px;
   transition: all 250ms ease;
 }
 
@@ -108,76 +124,57 @@ a:hover {
 
 .poloroid p {
   color: black;
+  margin: 8px;
 }
 
 .work-section {
   background-color: black;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
 
-.work-heading {
+.work-section h2 {
   text-align: center;
+  display: flex;
 }
 
-.calculator {
-  margin-left: 300px;
+.work-section figure {
+  display: flex;
   position: relative;
-  border: 3px solid green;
+  border: 3px solid #9bf6ff;
+  box-shadow: -10px 10px 0 -3px var(--color-bg-primary), -10px 10px #fff59b,
+    -20px 20px 0 -3px var(--color-bg-primary), -20px 20px 0 0 #ff9bf7;
 }
 
-.nyx {
-  margin-left: 300px;
-  position: relative;
-  border: 3px solid green;
+.work-section figure:nth-child(odd) {
+  transform: translateX(-60%);
 }
 
-.todo-list {
-  margin-left: 300px;
-  position: relative;
-  border: 3px solid green;
+.work-section figure:nth-child(even) {
+  transform: translateX(60%);
 }
 
-.calc-img {
-  position: relative;
-  left: 50px;
-}
-
-.nyx-img {
-  position: relative;
-  left: 100px;
-}
-
-.todo-img {
-  position: relative;
-  left: 150px;
-}
-
-.calculator-caption {
+.work-section figcaption {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-250%, -50%);
-}
-
-.nyx-project {
-  position: relative;
-}
-
-.nyx-caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-100px, -50%);
-}
-
-.todo-list-caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50px, -50%);
+  right: -50px;
+  transform: translate(0%, -50%);
 }
 
 .contact-section {
-  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+  text-align: center;
+  padding: 50px;
 }
