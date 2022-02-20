@@ -1,5 +1,6 @@
 body {
-  --color-bg-primary: #637a9e;
+  --color-bg-primary: #576b8b;
+  --color-text: #9bf6ff;
   background-color: var(--color-bg-primary);
   color: #f0e5d9;
 }
@@ -14,12 +15,12 @@ header {
 
 .introduction {
   color: #9bf6ff;
-  background-color: #637a9e;
+  background-color: var(--color-bg-primary);
   display: flex;
   flex-direction: column;
   width: 500px;
   padding: 20px;
-  border: 3px solid #9bf6ff;
+  border: 3px solid currentColor;
   text-align: center;
 }
 
@@ -41,7 +42,7 @@ nav a {
 
 a {
   text-decoration: none;
-  background-color: #637a9e;
+  background-color: var(--color-bg-primary);
   border: 3px solid #9bf6ff;
   color: #9bf6ff;
   padding: 30px;
@@ -50,15 +51,15 @@ a {
   margin: 100px;
   width: 300px;
   text-align: center;
-  box-shadow: -10px 10px 0 -3px #637a9e, -10px 10px #9bf6ff,
-    -20px 20px 0 -3px #637a9e, -20px 20px 0 0 #9bf6ff;
+  box-shadow: -10px 10px 0 -3px var(--color-bg-primary), -10px 10px #9bf6ff,
+    -20px 20px 0 -3px var(--color-bg-primary), -20px 20px 0 0 #9bf6ff;
 }
 
 a:hover {
   top: 40px;
   right: 40px;
-  box-shadow: 0 0 0 -3px #637a9e, 0 0 0 0px #9bf6ff, 0 0 0 -3px #637a9e,
-    0 0 0 0px #9bf6ff;
+  box-shadow: 0 0 0 -3px var(--color-bg-primary), 0 0 0 0px #9bf6ff,
+    0 0 0 -3px var(--color-bg-primary), 0 0 0 0px #9bf6ff;
 }
 
 .about-section {
@@ -66,7 +67,6 @@ a:hover {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  background-color: black;
 }
 
 .about-text {
@@ -78,17 +78,104 @@ a:hover {
   width: 500px;
 }
 
-.my-dog {
-  border: 3px solid white;
-  transform: rotate(7deg);
+.about-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.poloroid {
+  background-color: white;
+  padding: 10px;
+  margin: 30px;
+  transition: all 250ms ease;
+}
+
+.poloroid.right:hover {
+  transform: rotate(0deg);
+}
+
+.poloroid.left:hover {
+  transform: rotate(0deg);
+}
+
+.poloroid.right {
+  transform: rotate(-8deg);
+}
+
+.poloroid.left {
+  transform: rotate(10deg);
+}
+
+.poloroid p {
+  color: black;
 }
 
 .work-section {
   background-color: black;
+  display: flex;
+  flex-direction: column;
 }
 
 .work-heading {
   text-align: center;
+}
+
+.calculator {
+  margin-left: 300px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.nyx {
+  margin-left: 300px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.todo-list {
+  margin-left: 300px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.calc-img {
+  position: relative;
+  left: 50px;
+}
+
+.nyx-img {
+  position: relative;
+  left: 100px;
+}
+
+.todo-img {
+  position: relative;
+  left: 150px;
+}
+
+.calculator-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-250%, -50%);
+}
+
+.nyx-project {
+  position: relative;
+}
+
+.nyx-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100px, -50%);
+}
+
+.todo-list-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50px, -50%);
 }
 
 .contact-section {
