@@ -5,11 +5,11 @@
 }
 
 body {
-  --color-bg-primary: black;
+  --color-bg-primary: rgb(15, 15, 15);
   --color-text: #9bf6ff;
   background-color: var(--color-bg-primary);
   color: #f0e5d9;
-  font-family: "Roboto Slab", monospace;
+  font-family: "Roboto Serif", sans-serif;
 }
 
 main {
@@ -24,7 +24,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 150px;
 }
 
 .introduction {
@@ -40,7 +40,15 @@ header {
 h1,
 h2 {
   color: #9bf6ff;
-  font-size: 40px;
+  font-size: 60px;
+  max-width: 500px;
+  font-weight: 200;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none;
 }
 
 p {
@@ -49,7 +57,7 @@ p {
 
 nav {
   display: flex;
-  gap: 50px;
+  gap: 70px;
   flex-direction: column;
   max-width: 300px;
   width: 100%;
@@ -83,7 +91,7 @@ a span {
   margin: -2em;
 }
 
-a:hover {
+nav a:hover {
   top: 40px;
   right: 40px;
   box-shadow: 0 0 0 -3px var(--color-bg-primary), 0 0 0 0px #fff59b,
@@ -144,7 +152,7 @@ a:hover {
 }
 
 .work-section {
-  background-color: black;
+  background-color: var(--color-bg-primary);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -186,7 +194,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .contact-text {
@@ -220,28 +228,34 @@ a:hover {
 
 .email:hover {
   box-shadow: 0 0 25px #9bf6ff;
-  background-color: black;
+  background-color: var(--color-bg-primary);
 }
 
 .phone:hover {
   box-shadow: 0 0 25px #fff59b;
-  background-color: black;
+  background-color: var(--color-bg-primary);
 }
 
 .linkedin:hover {
   box-shadow: 0 0 25px #ff9bf7;
-  background-color: black;
+  background-color: var(--color-bg-primary);
 }
 
-.top {
-  text-decoration: none;
-  padding: 10px;
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: rgb(10, 10, 10);
+}
+
+footer a {
+  background-color: black;
+  border: none;
   color: #9bf6ff;
-  border: 3px solid #9bf6ff;
-  background-color: var(--color-bg-primary);
-  position: fixed;
-  bottom: 20px;
-  right: 150px;
+  position: relative;
+  top: -50px;
+  padding: 15px;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
