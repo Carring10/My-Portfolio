@@ -216,14 +216,23 @@ nav a:hover {
 
 .email {
   border: 3px solid #9bf6ff;
+  padding: 20px 30px;
+  max-width: 150px;
+  width: 100%;
 }
 
 .phone {
   border: 3px solid #fff59b;
+  padding: 20px 30px;
+  max-width: 150px;
+  width: 100%;
 }
 
 .linkedin {
   border: 3px solid #ff9bf7;
+  padding: 20px 30px;
+  max-width: 150px;
+  width: 100%;
 }
 
 .email:hover {
@@ -256,6 +265,11 @@ footer a {
   padding: 15px;
   font-size: 30px;
   cursor: pointer;
+  transition: top ease 0.3s;
+}
+
+footer a:hover {
+  top: -60px;
 }
 
 @media screen and (max-width: 800px) {
