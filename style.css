@@ -207,32 +207,38 @@ nav a:hover {
   padding: 50px;
 }
 
-.contact-text p {
+.contact-text a {
   padding: 20px;
   transition: box-shadow 0.3s;
   width: 60%;
   cursor: pointer;
 }
 
-.email {
+.email,
+.email:visited {
   border: 3px solid #9bf6ff;
   padding: 20px 30px;
   max-width: 150px;
   width: 100%;
+  color: #9bf6ff;
 }
 
-.phone {
+.phone,
+.phone:visited {
   border: 3px solid #fff59b;
   padding: 20px 30px;
   max-width: 150px;
   width: 100%;
+  color: #fff59b;
 }
 
-.linkedin {
+.linkedin,
+.linkedin:visited {
   border: 3px solid #ff9bf7;
   padding: 20px 30px;
   max-width: 150px;
   width: 100%;
+  color: #ff9bf7;
 }
 
 .email:hover {
