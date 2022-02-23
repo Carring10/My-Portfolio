@@ -205,6 +205,7 @@ nav a:hover {
   list-style: none;
   text-align: center;
   padding: 50px;
+  font-size: 20px;
 }
 
 .contact-text a {
@@ -260,22 +261,42 @@ footer {
   text-align: center;
   padding: 30px;
   background-color: rgb(10, 10, 10);
+  position: relative;
 }
 
-footer a {
+.back-to-top {
   background-color: black;
   border: none;
   color: #9bf6ff;
-  position: relative;
+  position: absolute;
   top: -50px;
   padding: 15px;
   font-size: 30px;
   cursor: pointer;
   transition: top ease 0.3s;
+  line-height: 50px;
+  width: auto;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
-footer a:hover {
+.back-to-top:hover {
   top: -60px;
+}
+
+.github {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  gap: 20px;
+  width: 100%;
+}
+
+.github a img {
+  width: 30px;
+  height: auto;
 }
 
 @media screen and (max-width: 800px) {
