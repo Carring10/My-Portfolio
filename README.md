@@ -2,7 +2,7 @@
 
 ## Description
 
-This is my personal portfolio, probably the first of many. There is still a lot I'd like to add and to tweak, but at my current level I gave it my all.
+This is my personal portfolio, probably the first of many. There is still a lot I'd like to add and to tweak, but at my current level it's the best I can do.
 
 ## Preview
 
