@@ -1,3 +1,13 @@
-# My-Portfolio
+# My Portfolio
 
-This is my personal portfolio, probably the first of many. There is still a lot I'd like to add and tweak, but at my current level I gave it my all.
+## Description
+
+This is my personal portfolio, probably the first of many. There is still a lot I'd like to add and to tweak, but at my current level I gave it my all.
+
+## Preview
+
+![Project Preview](images/Portfolio-Preview.png)
+
+## Link To Site
+
+[Link to live Site](https://carring10.github.io/My-Portfolio/)
