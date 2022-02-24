@@ -32,9 +32,14 @@ header {
   background-color: var(--color-bg-primary);
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 15px;
   max-width: 500px;
   text-align: center;
+}
+
+.introduction img {
+  max-width: 300px;
 }
 
 h1,
@@ -130,6 +135,14 @@ nav a:hover {
   transition: all 250ms ease;
 }
 
+.poloroid.right img {
+  max-width: 200px;
+}
+
+.poloroid.left img {
+  max-width: 200px;
+}
+
 .poloroid.right:hover {
   transform: rotate(0deg);
 }
@@ -157,6 +170,23 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   gap: 50px;
+}
+
+.first-project {
+  max-width: 200px;
+  display: flex;
+}
+
+.second-project {
+  max-width: 150px;
+  height: 150px;
+  display: flex;
+}
+
+.third-project {
+  max-width: 150px;
+  height: 150px;
+  display: flex;
 }
 
 .work-section h2 {
@@ -262,6 +292,7 @@ footer {
   padding: 30px;
   background-color: rgb(10, 10, 10);
   position: relative;
+  padding-top: 45px;
 }
 
 .back-to-top {
@@ -284,7 +315,7 @@ footer {
   top: -60px;
 }
 
-.github {
+.footer-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -294,9 +325,9 @@ footer {
   width: 100%;
 }
 
-.github a img {
+.footer-content a img {
   width: 30px;
-  height: auto;
+  height: 30px;
 }
 
 @media screen and (max-width: 800px) {
@@ -309,6 +340,11 @@ footer {
     flex-direction: column;
     height: 100%;
     gap: 30px;
+  }
+
+  .introduction h1 {
+    flex-wrap: wrap;
+    display: flex;
   }
 
   .about-section {
@@ -325,5 +361,9 @@ footer {
   .work-section figure:nth-child(even),
   .work-section figure:nth-child(odd) {
     transform: translateX(0);
+  }
+
+  footer {
+    width: 100%;
   }
 }
