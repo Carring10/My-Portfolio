@@ -69,6 +69,8 @@ nav {
   padding: 30px;
 }
 
+/* About Me, My Work, and Contact Me */
+
 nav a {
   position: relative;
   top: 0;
@@ -95,6 +97,8 @@ a span {
   z-index: 1;
   margin: -2em;
 }
+
+/* Hover event on About Me, My Work, and Contact Me */
 
 nav a:hover {
   top: 40px;
@@ -128,12 +132,16 @@ nav a:hover {
   flex-direction: column;
 }
 
+/* For the 3 images in the about section */
+
 .poloroid {
   background-color: white;
   padding: 8px;
   margin: 20px;
   transition: all 250ms ease;
 }
+
+/* Used right and left on about section images to give an alternating effect */
 
 .poloroid.right img {
   max-width: 200px;
@@ -159,6 +167,8 @@ nav a:hover {
   transform: rotate(10deg);
 }
 
+/* Text on about section images */
+
 .poloroid p {
   color: black;
   margin: 8px;
@@ -172,27 +182,31 @@ nav a:hover {
   gap: 50px;
 }
 
-.first-project {
+.Nyx-project {
   max-width: 200px;
   display: flex;
 }
 
-.second-project {
+.Clock-project {
   max-width: 150px;
   height: 150px;
   display: flex;
 }
 
-.third-project {
+.Calculator-project {
   max-width: 150px;
   height: 150px;
   display: flex;
 }
+
+/* Work Section title */
 
 .work-section h2 {
   text-align: center;
   display: flex;
 }
+
+/* Previews of my projects */
 
 .work-section figure {
   display: flex;
@@ -201,6 +215,8 @@ nav a:hover {
   box-shadow: -10px 10px 0 -3px var(--color-bg-primary), -10px 10px #fff59b,
     -20px 20px 0 -3px var(--color-bg-primary), -20px 20px 0 0 #ff9bf7;
 }
+
+/* To alternate project previews position */
 
 .work-section figure:nth-child(odd) {
   transform: translateX(-60%);
@@ -238,12 +254,16 @@ nav a:hover {
   font-size: 20px;
 }
 
+/* Links to contact */
+
 .contact-text a {
   padding: 20px;
   transition: box-shadow 0.3s;
   width: 60%;
   cursor: pointer;
 }
+
+/* To maintain applied styles once link has been visited */
 
 .email,
 .email:visited {
@@ -295,9 +315,11 @@ footer {
   padding-top: 45px;
 }
 
+/* To bring you to the top of my page */
+
 .back-to-top {
   background-color: black;
-  border: none;
+  border: 3px solid #9bf6ff;
   color: #9bf6ff;
   position: absolute;
   top: -50px;
@@ -324,6 +346,8 @@ footer {
   gap: 20px;
   width: 100%;
 }
+
+/* Link to my Github */
 
 .footer-content a img {
   width: 30px;
